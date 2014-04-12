@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/sor_hires01"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+    
+    <Button
+        android:id="@+id/CheckinButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkin_button" 
+        android:layout_below="@id/view_spacer"
+        android:height="0px"
+        android:background="@drawable/green_button" />
+    
+     <View
+        android:id="@+id/view_spacerCheckin"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp" 
+        android:layout_below="@id/CheckinButton"/>
+     
+     <Button
+        android:id="@+id/reportWatchButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_button" 
+        android:layout_below="@id/view_spacerCheckin"
+        android:background="@drawable/blue_button" />
+    
+     <View
+        android:id="@+id/view_spacerWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp" 
+        android:layout_below="@id/reportWatchButton"/>
+    
+     <Button
+        android:id="@+id/reportProblemButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/problem_button" 
+        android:layout_below="@id/view_spacerWatch"
+        android:background="@drawable/yellow_button"  />
+    
+     <View
+        android:id="@+id/view_spacerProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp" 
+        android:layout_below="@id/reportProblemButton"/>
+     
+     <Button
+        android:id="@+id/reportEmergencyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emergency_button" 
+        android:layout_below="@id/view_spacerProblem"
+        android:background="@drawable/red_button"  />
+    
+     
+     <View
+        android:id="@+id/view_spacerEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" 
+        android:layout_below="@id/reportEmergencyButton"/>
+     
+     
+      <Button
+        android:id="@+id/sorButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sor_button" 
+        android:layout_below="@id/view_spacerEmergency"
+        android:background="@drawable/yellowgrad_button"/>
+      
+      <View
+        android:id="@+id/view_spacer2"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" 
+        android:layout_below="@id/sorButton"/>
+      
+       <Button
+        android:id="@+id/exitButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_button" 
+        android:layout_below="@id/view_spacer2"
+        android:background="@drawable/yellowgrad_button"/>
+       
+       <TextView
+           android:id="@+id/versionTextView"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_gravity="bottom"
+           android:gravity="right"
+           android:text="@string/version" />
+      
+       
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+     <Button
+        android:id="@+id/submitDataButtonTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/submit_button" 
+        android:background="@drawable/green_button" />
+         
+    <TextView
+        android:id="@+id/nameLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:lines="1" >
+    </EditText>
+    
+    
+    <View
+        android:id="@+id/view_spacer3"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+    
+    <TextView
+        android:id="@+id/descriptionLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/types_string"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="3" >
+    </EditText>
+    
+    <View
+        android:id="@+id/view_spacer5"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+    
+    <TextView
+        android:id="@+id/dispositionLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disposition_string"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dispositionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:lines="1" >
+    </EditText>
+    
+    
+    <View
+        android:id="@+id/view_spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/severity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/severity_string"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/severity_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/severity_array"
+        android:prompt="@string/severity_string" />
+
+    <View
+        android:id="@+id/view_spacer1"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/types_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/types_string"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/types_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/types_array"
+        android:prompt="@string/types_string" />
+
+    <View
+        android:id="@+id/view_spacer2"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    
+
+    <View
+        android:id="@+id/view_spacer4"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/fileLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/types_string"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/fileSelectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_button" 
+        android:height="10dp"
+        android:width="10dp"
+        android:background="@drawable/blue_button" />
+   
+    <HorizontalScrollView 
+        android:id="@+id/iconScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@color/LightYellow">
+        
+        <LinearLayout 
+            android:id="@+id/imageLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/submitDataButtonBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/submit_button" 
+        android:background="@drawable/green_button" />
+    <View
+        android:id="@+id/view_spacerWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp" />
+    
+     <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/cancel_button" 
+        android:background="@drawable/red_button" />
+</LinearLayout>
+    
+
+</ScrollView>
